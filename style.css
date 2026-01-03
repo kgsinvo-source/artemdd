@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00ffd5;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.image {
+    height: 180px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.description {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.4rem;
+    color: #00ffd5;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00ffd5, #00bcd4);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* PROMO */
+.promo {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.promo-card {
+    background: linear-gradient(135deg, #00ffd5, #00bcd4);
+    color: #000;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    opacity: 0.6;
+}
